@@ -1,0 +1,180 @@
+#contenedor {
+    width: 70%;
+    max-width: 1200px;
+    background-color: #FBFBFB;
+    margin: 0 auto; /*para centrarlo*/ /*arriba y abajo - izquierda y derecha ---- si pongo 4 arriba derecha abajo izquierda*/
+    height: auto;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+header {
+    background: radial-gradient(circle 300px, #FBFBFB 30% , #B7E5EB 150%);
+    height: 110px;
+}
+.color_letra {
+    color: #2C8E99;
+}
+.fuente1 { /*clase para dar estilo a las fuentes Arial*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+header p {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+}
+nav { /*centro el menú*/
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.menu { /*clase para crear los menús de las dos páginas*/
+    display: inline-block;
+    font-weight: bold;
+}
+nav a { /*le doy estilo a los bordes del menú*/
+    color: #ffffff;
+    background-color:#2C8E99;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+nav a, li a {
+    text-decoration:none;
+}
+nav a:hover, .activo { /*cambia el color del menú cuando se sitúa el ratón encima y también el de la página activa*/
+    color: #2C8E99;
+    background-color: #ffffff;
+}
+h1, h2, h3 { /*para que el texto deje un espacio a la izquierda*/
+    margin-left: 20px;
+}
+h1 {
+    font-size: 200%;
+}
+h3 {
+    font-size: 150%;
+    margin-left: 60px;
+}
+p {
+    text-indent: 30px;
+    margin: 0 25px 10px 25px;
+    line-height: 20px;
+}
+h3 + p, h3 + div> p, h3 + div > p + ol { /******************SECTION CAMBIADO**************************/
+/*h3 + p, h3 + section > p, h3 + section > p + ol { /*alineación correcta de los textos de abajo de Measures en la página method.html*/
+    text-align: justify;
+    text-indent:0%;
+}
+h3 + p {
+    padding-left: 10px;
+    border-left: 2px solid #2C8E99;
+    margin-left: 60px;  
+}
+/*h3 + section > p {***********************************SECTION CAMBIADO********************************************************/
+h3 + div > p {
+    display: block;  
+    margin-left: 10px;
+ 
+}
+.borde_izq { /*estilo para la subsección que coge el párrafo y la lista ordenada*/ 
+    border-left: 2px solid #2C8E99; 
+    margin-left: 60px;
+}
+
+
+/*********************************/
+cite {
+    font-size: 16px;
+    margin-left: 40px; 
+}
+.rojo {
+    color:#ff0000;
+    font-weight: bold;
+}
+.parrafo1 { /*estilo para el párrafo inicial de la página index*/
+    border-top: 2px solid #2C8E99;
+    border-bottom: 2px solid #2C8E99;
+    margin: 30px 60px;
+    padding: 10px 5px;
+    font-size: 20px;
+}
+.negrita {
+    font-weight: bold;
+}
+.verde_oscuro {
+    color: #0e5a63;
+}
+.verde_claro {
+    color:#2C8E99;
+}
+.cursiva {
+    font-style: italic;
+}
+
+blockquote {
+    border: 2px solid green; /*para borrar*/
+    height: 120px;
+    width: 96%;
+    background-color: #ffffff;
+   /* text-indent: 20px; /*me alinea la comilla grande de apertura*/
+}
+blockquote p { /*para alinear el texto dentro del blockquote*/
+    line-height: 20px;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-top: -50px;
+}
+blockquote::before { /*para definir el estilo de las comillas de apertura del bloque de texto*/
+    content: open-quote;
+    color:#2C8E99;
+    font-size: 80px;
+    display:block;
+}
+li {
+    line-height: 20px;
+}
+.li_pag1 { /*este estilo solo me vale para la página index, en la otra están metidas más hacia dentro*/
+    list-style-position: inside;
+    
+    margin-left: 15px;
+}
+.li_pag2{ /*clase para la primera lista de la página method*/
+    margin-left: 60px;
+}
+ul {
+    margin: 30px 0;
+}
+.li_img { /*estilo para la lista con el icono del libro*/
+    margin-left: 50px;
+    list-style-image: url('../img/icono-libro.png');
+}
+/*PARA ENCAJAR LA IMAGEN DE LA TABLA EN LA PÁGINA**/
+figure > a > img {
+   object-fit:contain;
+   width: 600px;
+   height: 100px;
+}
+figcaption, figure > img, figure > a > img { /*centrar texto bajo la imagen*/
+    margin-left: 20%; 
+}
+.imagen {
+    width: 500px;
+    height: 400px;
+}
+footer {
+    background-color: #2C8E99;
+    height: 100px; /*CREO QUE NO LE HACE CASO*/
+    color: #FFFFFF;
+    padding: 30px 25px 0px 25px;
+    text-indent: 30px;
+    height: 100px;
+}
+footer a {
+    color:#FFFFFF;
+    text-align: center;
+    display:inline-block;
+    width: 100%;
+}
