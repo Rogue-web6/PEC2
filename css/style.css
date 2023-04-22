@@ -4,10 +4,11 @@
     background-color: #FBFBFB;
     margin: 0 auto; /*para centrarlo*/ /*arriba y abajo - izquierda y derecha ---- si pongo 4 arriba derecha abajo izquierda*/
     height: auto;
+    border-right: solid 2px #2C8E99; /*le doy color a los bordes del contenedor porque no era accesible*/
+    border-left: solid 2px #2C8E99;
 }
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif; 
 }
 header {
     background: radial-gradient(circle 300px, #FBFBFB 30% , #B7E5EB 150%);
@@ -20,7 +21,6 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 header p {
-    /*font-family: Arial, Helvetica, sans-serif;*/
     font-weight: bold;
     font-size: 35px;
     text-align: center;
@@ -35,18 +35,21 @@ nav { /*centro el menú*/
     display: inline-block;
     font-weight: bold;
 }
-nav a { /*le doy estilo a los bordes del menú*/
-    color: #ffffff;
+nav a { /*le doy estilo al menú*/
+    color: #FBFBFB;
     background-color:#2C8E99;
     padding: 20px 15px;
     border-radius: 10px;
+    font-size: 20px;
 }
 nav a, li a {
     text-decoration:none;
 }
 nav a:hover, .activo { /*cambia el color del menú cuando se sitúa el ratón encima y también el de la página activa*/
-    color: #2C8E99;
-    background-color: #ffffff;
+    /*color: #2C8E99;*/
+   /* background-color: #FFFFFF;    CAMBIO EL COLOR DE FONDO Y DE LETRA POR OTROS CON MÁS CONTRASTE PORQUE NO CUMPLEN EL WCAG AA*/
+    background-color: #8F6277;
+    color: #FFFFFF;
 }
 h1, h2, h3 { /*para que el texto deje un espacio a la izquierda*/
     margin-left: 20px;
@@ -63,8 +66,7 @@ p {
     margin: 0 25px 10px 25px;
     line-height: 20px;
 }
-h3 + p, h3 + div> p, h3 + div > p + ol { /******************SECTION CAMBIADO**************************/
-/*h3 + p, h3 + section > p, h3 + section > p + ol { /*alineación correcta de los textos de abajo de Measures en la página method.html*/
+h3 + p, h3 + div > p, h3 + div > p + ol {
     text-align: justify;
     text-indent:0%;
 }
@@ -73,26 +75,22 @@ h3 + p {
     border-left: 2px solid #2C8E99;
     margin-left: 60px;  
 }
-/*h3 + section > p {***********************************SECTION CAMBIADO********************************************************/
 h3 + div > p {
     display: block;  
     margin-left: 10px;
- 
 }
 .borde_izq { /*estilo para la subsección que coge el párrafo y la lista ordenada*/ 
     border-left: 2px solid #2C8E99; 
     margin-left: 60px;
 }
-
-
-/*********************************/
 cite {
     font-size: 16px;
     margin-left: 40px; 
 }
 .rojo {
-    color:#ff0000;
+    color:#FF0000;
     font-weight: bold;
+    font-size: 20px; /*AUMENTO EL TAMAÑO DE ESTA FUENTE PARA LAS LETRAS ROJAS DEL AUTOR Y QUE SEAN ACCESIBLES*/
 }
 .parrafo1 { /*estilo para el párrafo inicial de la página index*/
     border-top: 2px solid #2C8E99;
@@ -105,7 +103,7 @@ cite {
     font-weight: bold;
 }
 .verde_oscuro {
-    color: #0e5a63;
+    color: #0E5A63;
 }
 .verde_claro {
     color:#2C8E99;
@@ -113,13 +111,11 @@ cite {
 .cursiva {
     font-style: italic;
 }
-
 blockquote {
-    border: 2px solid green; /*para borrar*/
+    border: 2px solid #2C8E99; /*para borrar*/
     height: 120px;
     width: 96%;
-    background-color: #ffffff;
-   /* text-indent: 20px; /*me alinea la comilla grande de apertura*/
+    background-color: #FFFFFF;
 }
 blockquote p { /*para alinear el texto dentro del blockquote*/
     line-height: 20px;
@@ -138,11 +134,10 @@ li {
 }
 .li_pag1 { /*este estilo solo me vale para la página index, en la otra están metidas más hacia dentro*/
     list-style-position: inside;
-    
     margin-left: 15px;
 }
 .li_pag2{ /*clase para la primera lista de la página method*/
-    margin-left: 60px;
+    margin-left: 30px;
 }
 ul {
     margin: 30px 0;
@@ -165,8 +160,8 @@ figcaption, figure > img, figure > a > img { /*centrar texto bajo la imagen*/
     height: 400px;
 }
 footer {
-    background-color: #2C8E99;
-    height: 100px; /*CREO QUE NO LE HACE CASO*/
+    /*background-color: #2C8E99; COLOR NO ACCESIBLE CON LAS LETRAS EN BLANCO*/
+    background-color: #8F6277; /*CAMBIO A ESTE COLOR DE FONDO EL FOOTER PARA QUE TENGA SUFICIENTE CONTRASTE*/
     color: #FFFFFF;
     padding: 30px 25px 0px 25px;
     text-indent: 30px;
