@@ -51,6 +51,12 @@ nav a:hover, .activo { /*cambia el color del menú cuando se sitúa el ratón en
     background-color: #8F6277;
     color: #FFFFFF;
 }
+a[href="#next"], a[href="#next1"], a[href="#next2"], a[href="#next3"], a[href="#next4"], a[href="#final"] {/*estilo para las anclas*/
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
 h1, h2, h3 { /*para que el texto deje un espacio a la izquierda*/
     margin-left: 20px;
 }
@@ -112,7 +118,7 @@ cite {
     font-style: italic;
 }
 blockquote {
-    border: 2px solid #2C8E99; /*para borrar*/
+    border: 2px solid #2C8E99; /*Añado borde al blockquote por razones de accesibilidad, de lo contrario no había contraste suficiente.*/
     height: 120px;
     width: 96%;
     background-color: #FFFFFF;
@@ -138,6 +144,8 @@ li {
 }
 .li_pag2{ /*clase para la primera lista de la página method*/
     margin-left: 30px;
+    margin-right: 20px;
+    line-height: 25px;;
 }
 ul {
     margin: 30px 0;
@@ -163,9 +171,9 @@ footer {
     /*background-color: #2C8E99; COLOR NO ACCESIBLE CON LAS LETRAS EN BLANCO*/
     background-color: #8F6277; /*CAMBIO A ESTE COLOR DE FONDO EL FOOTER PARA QUE TENGA SUFICIENTE CONTRASTE*/
     color: #FFFFFF;
-    padding: 30px 25px 0px 25px;
+    padding: 40px 27px 0px 25px;
     text-indent: 30px;
-    height: 100px;
+    height: 80px;
 }
 footer a {
     color:#FFFFFF;
